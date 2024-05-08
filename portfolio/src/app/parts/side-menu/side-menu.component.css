@@ -1,0 +1,33 @@
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300px;
+    background-color: #04122F;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color:white
+  }
+  
+  .profile-picture {
+    margin-bottom: 20px;
+  }
+  
+  .menu-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .contact-icons a {
+    display: inline-block;
+    margin-right: 10px;
+  }
