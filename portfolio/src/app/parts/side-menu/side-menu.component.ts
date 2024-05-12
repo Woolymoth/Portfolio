@@ -30,5 +30,13 @@ export class SideMenuComponent {
   navigateToContact(): void {
     this.router.navigateByUrl('/contact');
   }
-
+  downloadResume(): void {
+    const link = document.createElement('a');
+    link.setAttribute('target', '_blank');
+    link.setAttribute('href', '/assets/Resume Elias Linderos (EN,SW).pdf');
+    link.setAttribute('download', '/Resume Elias Linderos (EN,SW).pdf');
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  }
 }

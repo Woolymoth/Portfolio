@@ -15,12 +15,13 @@
     width: 980px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    margin: 20px;
 }
 h1{
     font-size: xx-large;
     font-weight: 700;
+    color: #333;
     text-align: center;
 }
 p{

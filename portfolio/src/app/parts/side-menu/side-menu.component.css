@@ -11,7 +11,7 @@
   .contact-icons{
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 5px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -24,9 +24,13 @@
   
   .header {
     font-weight: bold;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
     color:white
+  }
+  h1{
+    text-align: center;
+    font-size: xx-large;
   }
   
   .menu-buttons {
@@ -45,7 +49,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(me.jpg);
     height: 200px;
     width: 200px;
     border: solid 5px white;
