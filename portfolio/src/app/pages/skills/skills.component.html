@@ -1,0 +1,13 @@
+<div class="main-content flex justify-center">
+  <ng-container *ngFor="let group of getSkillGroups()" >
+      <div class="experience-table">
+          <div *ngFor="let skill of group" class="skill-item">
+              <p>{{ skill.name }}</p>
+              <div class="experience-bar">
+                  <div class="fill" [style.width.%]="skill.level"></div>
+              </div>
+          </div>
+      </div>
+  </ng-container>
+  <img src="assets/desktop.png" alt="asd">
+</div>
