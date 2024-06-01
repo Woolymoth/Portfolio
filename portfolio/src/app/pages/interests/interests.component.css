@@ -87,3 +87,42 @@ p{
         transform: translateX(0);
     }
 }
+@media (max-width: 768px) {
+    .content {
+        margin-left: 0;
+        padding: 10px;
+        height: auto;
+        margin-top: 800px;
+        margin-bottom: 400px;
+    }
+  
+    .interest-row {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-top: 20px;
+    }
+  
+    .interest-left, .interest-right {
+        flex-direction: row;
+        margin: 10px 0;
+    }
+  
+    .text {
+        width: auto;
+        text-align: left;
+    }
+  
+    .text-right {
+        text-align: left;
+    }
+  
+    img {
+        height: 110px;
+        width: 110px;
+        margin-left: 20px;
+    }
+    p{
+        font-size: small;
+    }
+}

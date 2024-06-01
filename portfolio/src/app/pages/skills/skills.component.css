@@ -50,3 +50,27 @@
     margin-left: 30px;
 
 }  
+@media (max-width: 768px) {
+
+  .main-content {
+      flex-direction: row;
+      justify-content: center;
+  }
+
+  .experience-table {
+    margin: 20px;
+  }
+
+  .skill-item {
+      margin-bottom: 10px;
+  }
+
+  .experience-bar {
+      width: 100px;
+      height: 8px;
+  }
+
+  img {
+      display: none;
+  }
+}

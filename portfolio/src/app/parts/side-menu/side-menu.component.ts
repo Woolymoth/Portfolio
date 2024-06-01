@@ -33,8 +33,8 @@ export class SideMenuComponent {
   downloadResume(): void {
     const link = document.createElement('a');
     link.setAttribute('target', '_blank');
-    link.setAttribute('href', '/assets/Resume Elias Linderos (EN,SW).pdf');
-    link.setAttribute('download', '/Resume Elias Linderos (EN,SW).pdf');
+    link.setAttribute('href', '/assets/Resume Elias Linderos (EN).pdf');
+    link.setAttribute('download', '/Resume Elias Linderos (EN).pdf');
     document.body.appendChild(link);
     link.click();
     link.remove();

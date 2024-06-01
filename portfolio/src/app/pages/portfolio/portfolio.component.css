@@ -98,3 +98,49 @@ p {
         transform: translateX(0);
     }
 }
+@media (max-width: 768px) {
+    .content {
+        margin-left: 0;
+        padding: 10px;
+        height: auto;
+        margin-top: 400px;
+        margin-bottom: 200px;
+    }
+  
+    .interest-row {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-top: 20px;
+    }
+  
+    .interest-left, .interest-right {
+        flex-direction: row;
+        margin: 10px 0;
+    }
+  
+    .text {
+        width: auto;
+        max-width: 70%;
+        text-align: left;
+    }
+  
+    .text-right {
+        width: auto;
+        max-width: 70%;
+        text-align: left;
+    }
+  
+    img {
+        height: 110px;
+        width: 110px;
+        margin-left: 5px;
+    }
+    .placeholder {
+        height: 110px;
+        width: 110px;
+    }
+    p{
+        font-size: small;
+    }
+}

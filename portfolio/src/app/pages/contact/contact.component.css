@@ -11,6 +11,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: rgb(240,248,255,0.4);
 }
 
 .contact-card-linkedin {
@@ -21,6 +22,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: rgb(240,248,255,0.4);
+
 }
 
 .contact-card h2 {
@@ -76,3 +79,21 @@
         transform: translateX(0);
     }
 }
+
+@media screen and (max-width: 768px) {
+    .contact-cards {
+      flex-direction: column; /* Display cards in a single column on smaller screens */
+      align-items: center; /* Center align cards vertically */
+    }
+  
+    .contact-card,
+    .contact-card-linkedin {
+      width: 100%; /* Set width to full for smaller screens */
+      border: none; /* Remove borders */
+      margin-bottom: 20px; /* Add margin between cards */
+    }
+  
+    .contact-card {
+      border-bottom: 1px solid #ccc; /* Add bottom border to differentiate cards */
+    }
+  }

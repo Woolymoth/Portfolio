@@ -15,6 +15,8 @@
 .welcome-message {
     text-align: center;
     margin: 20px;
+    max-width: 800px; /* Set maximum width for better readability on larger screens */
+    margin: auto; /* Center the content horizontally */
 }
 
 .welcome-message h1 {
@@ -30,10 +32,45 @@
     line-height: 1.5;
     color: #666;
 }
-.welcome-message ul li{
-    margin: 20px;
+
+.welcome-message ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0;
+}
+
+.welcome-message ul li {
+    margin: 20px; /* Add vertical margin between list items */
     font-weight: bold;
 }
+
 .tool-name {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .welcome-message {
+        margin: 10px;
+    }
+
+    .welcome-message h1 {
+        font-size: large; /* Decrease font size for smaller screens */
+        background-color: rgba(243, 243, 243, 0.3);
+        margin: 10px;
+    }
+
+    .welcome-message p {
+        font-size: 0.9rem; /* Decrease font size for smaller screens */
+        background-color: rgba(243, 243, 243, 0.3);
+    }
+    .welcome-message ul {
+        list-style-type: none; /* Remove default list style */
+        padding: 0;
+        background-color: rgba(243, 243, 243, 0.3);
+    }
+    
+    .welcome-message ul li {
+        margin: 10px; /* Add vertical margin between list items */
+        font-size: small;
+        font-weight: bold;
+    }
 }

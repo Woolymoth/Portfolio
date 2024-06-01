@@ -1,18 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body{
+body {
     background-image: url(assets/background.jpg);
     background-position: center;
-}
-.center{
+    margin: 0; /* Ensure no default margins */
+    font-family: Arial, sans-serif; /* Set a global font */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    overflow-y: auto; 
+  }
+  
+  .center {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-}
-.main-content {
+  }
+  
+  .main-content {
     margin-left: 300px; 
     display: flex;
     justify-content: center;
@@ -21,4 +26,20 @@ body{
     border: solid 1px #ACACAC;
     height: 600px;
     background-color: white;
+  }
+  
+  /* Responsive Adjustments */
+  @media screen and (max-width: 768px) {
+    .main-content {
+      margin-left: 0; /* Remove left margin on smaller screens */
+      height: auto;
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .main-content {
+      padding: 5px;
+    }
   }

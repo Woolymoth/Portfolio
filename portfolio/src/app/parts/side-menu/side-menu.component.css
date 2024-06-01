@@ -1,67 +1,129 @@
 .side-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 300px;
-    background-color: #04122F;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  .contact-icons{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  a{
-    width: 50px;
-    height: 50px;
-    background: radial-gradient(circle at center, aliceblue 68%, transparent 25%);
-    border-radius: 30px;
-  }
-  
-  .header {
-    font-weight: bold;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    color:white
-  }
-  h1{
-    text-align: center;
-    font-size: xx-large;
-  }
-  
-  .menu-buttons {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 300px;
+  background-color: #04122F;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+a {
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(circle at center, aliceblue 68%, transparent 25%);
+  border-radius: 30px;
+}
+
+.header {
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-size: xx-large;
+}
+
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.contact-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.profile-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  border: solid 5px white;
+  border-radius: 100px;
+  margin-left: 25px;
+  margin-top: 50px;
+  margin-bottom: 35px;
+  background-position: center;
+  background-size: cover;
+}
+
+button {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: x-large;
+}
+
+/* Responsive Styles */
+
+
+@media screen and (max-width: 768px) {
+  .side-menu {
+    width: 100%; /* Adjust as needed */
+    height: 160px; /* Allow height to adjust based on content */
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: white;
   }
-  
-  .contact-icons a {
-    display: inline-block;
-    margin-right: 10px;
+
+  .profile-picture {
+display: none;  }
+
+  .header {
+    display: none;
   }
-  .profile-picture{
+
+  h1 {
+    font-size: medium;
+    display: none;
+  }
+
+  .menu-buttons {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    height: 200px;
-    width: 200px;
-    border: solid 5px white;
-    border-radius: 100px;
-    margin-left: 25px;
-    margin-top: 50px;
-    margin-bottom: 35px;
-    background-position: center;
-    background-size: cover;
+    margin-top: 5px;
+    margin-bottom: 0px;
   }
-  button{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-size: x-large;
+
+  .menu-buttons button {
+    margin: 5px;
+    width: auto;
+    font-size: large;
   }
-  
+
+  .contact-icons {
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 1px;
+    padding: 0;
+  }
+
+  .contact-icons a {
+    margin: 5px;
+  }
+
+  button {
+    width: auto;
+    font-size: large;
+    margin: 5px;
+  }
+}
